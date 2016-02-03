@@ -106,6 +106,10 @@ brew install homebrew/dupes/screen
 # brew install dark-mode
 #brew install exiv2
 brew install git
+brew install jq
+brew install wget
+brew install autojump
+echo '[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh' >> ~/.bash_profile
 # brew install git-lfs
 # brew install git-flow
 # brew install git-extras
@@ -158,6 +162,10 @@ brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" spotifree
+brew cask install --appdir="/Applications" karabiner
+brew cask install --appdir="/Applications" contexts
+brew cask install --appdir="/Applications" totalspaces
 # brew cask install --appdir="/Applications" evernote
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
