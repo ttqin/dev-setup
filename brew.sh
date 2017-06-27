@@ -65,7 +65,7 @@ grep -q "$LINE" ~/.extra || echo "$LINE" >> ~/.extra
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
 brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
+#brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 #brew install homebrew/php/php55 --with-gmp
 
@@ -113,7 +113,7 @@ echo '[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/
 # brew install git-lfs
 # brew install git-flow
 # brew install git-extras
-brew install imagemagick --with-webp
+# brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
 # brew install p7zip
@@ -152,18 +152,18 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="/Applications" sublime-text3
 # brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
+#brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" heroku-toolbelt
 # brew cask install --appdir="/Applications" macdown
 
 # Misc casks
-brew cask install --appdir="/Applications" google-chrome
+#brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" spotifree
-brew cask install --appdir="/Applications" karabiner
+#brew cask install --appdir="/Applications" slack
+#brew cask install --appdir="/Applications" dropbox
+#brew cask install --appdir="/Applications" spotifree
+brew cask install --appdir="/Applications" karabiner-elements
 brew cask install --appdir="/Applications" contexts
 brew cask install --appdir="/Applications" totalspaces
 # brew cask install --appdir="/Applications" evernote
@@ -177,11 +177,11 @@ brew cask install --appdir="/Applications" totalspaces
 brew cask alfred link
 
 # Install Docker, which requires virtualbox
-brew install docker
+# brew install docker
 # brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
+#brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 
 # Remove outdated versions from the cellar.
 brew cleanup
