@@ -35,6 +35,7 @@ brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
 brew tap homebrew/versions
+brew tap caskroom/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -67,6 +68,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 #brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
+brew install openconnect
 #brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
@@ -113,6 +115,7 @@ echo '[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/
 # brew install git-lfs
 # brew install git-flow
 # brew install git-extras
+brew install hub
 # brew install imagemagick --with-webp
 # brew install lua
 # brew install lynx
@@ -143,13 +146,13 @@ heroku update
 brew install caskroom/cask/brew-cask
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" alfred2
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 # brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
-brew cask install --appdir="/Applications" sublime-text3
+brew cask install --appdir="/Applications" sublime-text
 # brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 #brew cask install --appdir="/Applications" vagrant
@@ -172,9 +175,6 @@ brew cask install --appdir="/Applications" totalspaces
 
 #Remove comment to install LaTeX distribution MacTeX
 #brew cask install --appdir="/Applications" mactex
-
-# Link cask apps to Alfred
-brew cask alfred link
 
 # Install Docker, which requires virtualbox
 # brew install docker
